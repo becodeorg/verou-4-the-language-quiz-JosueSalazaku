@@ -3,7 +3,8 @@
 class LanguageGame
 {
     private array $words;
-    private player $player
+    private player $player;
+    private Word $word;
 
     public function __construct()
     {
@@ -11,7 +12,6 @@ class LanguageGame
         // They can be called without an instance of that class being created
         // and are used mostly for more *static* types of data (a fixed set of translations in this case)
         foreach (Data::words() as $frenchTranslation => $englishTranslation) {
-            // TODO: create instances of the Word class to be added to the words array
         $this->word[] = new Word($frenchTranslation, $englishTranslation);
         }
     }
@@ -19,7 +19,11 @@ class LanguageGame
     public function selectRandomWord() {
         // Option A: user visits site first time (or wants a new word)
         // TODO: select a random word for the user to translate
-    }
+        $this->word = $getRandomWords($this->words);
+        $_SESSION['currentWord'] = $this->word;
+    }   
+
+
 
     public function run(): void
     {
@@ -33,3 +37,5 @@ class LanguageGame
 
     }
 }
+
+echo "Hello world, just checking!";
