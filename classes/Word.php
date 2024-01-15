@@ -30,4 +30,3 @@ class Word
     
 }
 
-echo "Hello WORD!";

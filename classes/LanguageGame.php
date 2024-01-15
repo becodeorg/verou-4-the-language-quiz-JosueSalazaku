@@ -23,7 +23,6 @@ class LanguageGame
     public function run(): void
     {
         session_start();
-
         // Option A: user visits site first time (or wants a new word)
         if (!isset($_SESSION['player'])) {
             // Handle the case when the user needs to provide a nickname
@@ -60,4 +59,4 @@ class LanguageGame
     }
 }
 
-echo "Hello world, just checking!";
+

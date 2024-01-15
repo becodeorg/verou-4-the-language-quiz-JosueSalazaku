@@ -20,7 +20,7 @@ class Player
 }
 
 
-$player = new Player("John");
+$player = new Player("");
 
 echo "Player Name: " . $player->name . "<br>";
 echo "Player Score: " . $player->score . "<br>";
