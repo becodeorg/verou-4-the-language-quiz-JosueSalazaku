@@ -1,5 +1,7 @@
 <?php
 
+include 'classes/Player.php';
+
 class LanguageGame
 {
     private array $words;

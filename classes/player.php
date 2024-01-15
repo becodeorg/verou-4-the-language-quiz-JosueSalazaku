@@ -19,10 +19,11 @@ class Player
     }
 }
 
-echo "Hello Player <br>";
+
 $player = new Player("John");
-echo $player->name;  
-echo $player->score; 
+
+echo "Player Name: " . $player->name . "<br>";
+echo "Player Score: " . $player->score . "<br>";
 
 $player->resetScore();
-echo $player->score; 
+echo "Player Score after Reset: " . $player->score . "<br>";
