@@ -36,7 +36,7 @@ class LanguageGame
         } else {
             // Option B: user has just submitted an answer
 
-            // Handle different actions based on user input
+
             if (isset($_POST["reset"])) {
                 $this->player->resetScore();
                 $_SESSION["message"] = "The score has been reset!";
