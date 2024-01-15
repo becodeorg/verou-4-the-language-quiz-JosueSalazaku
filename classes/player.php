@@ -15,8 +15,14 @@ class Player
     }
 
     public function resetScore() {
-        
+        $this->score = 0;
     }
 }
 
-echo "Hello Player";
+echo "Hello Player <br>";
+$player = new Player("John");
+echo $player->name;  
+echo $player->score; 
+
+$player->resetScore();
+echo $player->score; 
